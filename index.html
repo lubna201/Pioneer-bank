@@ -113,11 +113,12 @@
             console.log(withdrawNumber);
 
             updateSpanText("currentWithdraw", withdrawNumber);
+            updateSpanText("currentBalance",-1* withdrawNumber);
 
-            const currentBalance = document.getElementById("currentBalance").innerText;
-            const currentBalanceNumber = parseFloat(currentBalance);
-            const totalBalanceAmount = currentBalanceNumber-withdrawNumber;
-            document.getElementById("currentBalance").innerText = totalBalanceAmount; //write the updated balance
+            // const currentBalance = document.getElementById("currentBalance").innerText;
+            // const currentBalanceNumber = parseFloat(currentBalance);
+            // const totalBalanceAmount = currentBalanceNumber-withdrawNumber;
+            // document.getElementById("currentBalance").innerText = totalBalanceAmount; //write the updated balance
 
             document.getElementById("withdrawAmount").value = "";
 
